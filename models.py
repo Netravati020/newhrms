@@ -22,5 +22,5 @@ class User(Base):
     __tablename__ = "usersdetails"
 
     id= Column(Integer, primary_key=True,index=True, autoincrement=True)
-    employee_id=Column(Integer,index=True)
+    employee_id=Column(String(100),index=True)
     password = Column(String(100), index=True)
